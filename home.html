@@ -1,0 +1,863 @@
+        <!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+        <html >
+           <head profile="http://www.w3.org/1999/xhtml/vocab">
+              <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+              <meta charset="utf-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="author" content="Sreelakshmi">
+              <meta name='robots' content='index,follow'>
+              <meta name='coverage' content='Worldwide'>
+              <meta name='distribution' content='Global'>
+              <meta name="viewport" content="width=device-width,initial-scale=1">
+              <title>SLK | Personal portfolio</title>
+
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <title>SLK </title>
+               <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+              <!-- Stylesheets -->
+              <link rel="stylesheet" href="../static/css/style.css">
+              <link rel="stylesheet" href="../static/css/owl.carousel.css"> 
+                  <!-- Animate css -->
+             <link href="../static/css/animate.css" rel="stylesheet">
+             <!-- Magnific css -->
+             <link href="../static/css/magnific-popup.css" rel="stylesheet">
+             <!-- Custom styles CSS -->
+                 <link href="../static/css/resumestyle.css" rel="stylesheet" >
+             <!-- Responsive CSS -->
+             <link href="../static/css/responsive.css" rel="stylesheet">
+              <!-- Google Fonts -->
+              <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+              <!--[if IE 9]>
+              <script src="../static/js/media.match.min.js"></script>
+              <![endif]-->
+
+
+        <style type="text/css">
+
+
+        .flip-card {
+          background-color: ghostwhite;
+          width: 100%;
+          height: 400px;
+          perspective: 1000px;
+          padding:10px;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+        }
+        .flip-card:hover{
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .flip-card-inner {
+          position: relative;
+          width: 100%;
+
+          text-align: center;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+          transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+        .flip-card-back >ul{
+          color:black;
+        }
+        .flip-card-back >ul>li{
+        text-align:left;
+        }
+
+        .flip-card-front {
+          background-color: #bbb;
+          color: black;
+        }
+
+        .flip-card-back {
+          background-color: #2980b9;
+          color: white;
+          transform: rotateY(180deg);
+        }
+        #project{
+              background-color: beige;
+            padding: 20px;
+        }
+          /* basic menu styles */
+        .block-menu {
+          display: block;
+         float:right;
+
+        }
+
+        .block-menu li {
+          display: inline-block;
+        }
+
+        .block-menu li a {
+          color: #fff;
+          display: block;
+          text-decoration: none;
+          font-family: 'Passion One', Arial, sans-serif;
+          font-smoothing: antialiased;
+          text-transform: uppercase;
+          overflow: visible;
+          line-height: 20px;
+          font-size: 24px;
+          padding: 15px 10px;
+        }
+
+        /* animation domination */
+        .three-d {
+          perspective: 200px;
+          transition: all .07s linear;
+          position: relative;
+          cursor: pointer;
+        }
+          /* complete the animation! */
+          .three-d:hover .three-d-box, 
+          .three-d:focus .three-d-box {
+            transform: translateZ(-25px) rotateX(90deg);
+          }
+
+        .three-d-box {
+          transition: all .3s ease-out;
+          transform: translatez(-25px);
+          transform-style: preserve-3d;
+          pointer-events: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+
+        /* 
+          put the "front" and "back" elements into place with CSS transforms, 
+          specifically translation and translatez
+        */
+        .front {
+          transform: rotatex(0deg) translatez(25px);
+        }
+
+        .back {
+          transform: rotatex(-90deg) translatez(25px);
+          color: #ffe7c4;
+        }
+
+        .front, .back {
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: black;
+          padding: 15px 10px;
+          color: white;
+          pointer-events: none;
+          box-sizing: border-box;
+        }
+
+
+        </style>
+
+           </head>
+
+           <!--<body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">-->
+        <body>
+              <div class="fill">
+                 <!-- Start Header -->
+                 <header id="header">
+                    <div class="container">
+                       <div class="row">
+                          <div class="col-lg-12 col-md-12">
+                             <div class="logo pull-left">
+                                <a href="#"><img src="../static/img/profile.jpg" alt="" style="border-radius: 56px;height: 50px;width: 50px;">&nbsp &nbsp SLK</a>
+                             </div>
+                             <div class="navigation pull-right">
+                                <nav class="navbar navbar-default">
+
+                                      <ul class="block-menu">
+                                     <li><a href="#intro" class="three-d">
+                                       Home
+                                       <span aria-hidden="true" class="three-d-box">
+                                         <span class="front">Home</span>
+                                         <span class="back">Home</span>
+                                       </span>
+                                     </a></li>
+                                     <li><a href="#aboutme" class="three-d">
+                                       About Me
+                                       <span aria-hidden="true" class="three-d-box">
+                                         <span class="front"> About Me</span>
+                                         <span class="back"> About Me</span>
+                                       </span>
+                                     </a></li>
+                                     <li><a href="#resume" class="three-d">
+                                       Resume
+                                       <span aria-hidden="true" class="three-d-box">
+                                         <span class="front"> Resume</span>
+                                         <span class="back"> Resume</span>
+                                       </span>
+                                     </a></li>
+                                      <li><a href="#project" class="three-d">
+                                       Project
+                                       <span aria-hidden="true" class="three-d-box">
+                                         <span class="front"> Project</span>
+                                         <span class="back"> Project</span>
+                                       </span>
+                                     </a></li>
+
+                                     <li><a href="#contact" class="three-d">
+                                       Contact me
+                                       <span aria-hidden="true" class="three-d-box">
+                                         <span class="front"> contact me</span>
+                                         <span class="back"> contact me</span>
+                                       </span>
+                                     </a></li>
+                                     <!-- more items here -->
+                                   </ul>
+                                </nav>
+                             </div>
+                             <i class="fa fa-bars toggle"></i>
+                          </div>
+                       </div>
+                    </div>
+                 </header>
+                 <!-- End Header -->
+                 <!-- Start Intro -->
+                 <section id="intro">
+                    <div class="slider ">
+                       <div class="slide">
+                          <div class="container">
+                             <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                   <h4>Hi all <span class="highlight"> !!</span> I'm <span class="highlight">Sreelakshmi Kodoth</span></h4>
+                                 <p class="type-it"></p>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </section>
+                 <!-- End Intro -->
+              </div>
+              <!-- map end here-->
+              <!-- Start Solutions -->
+              <section id="myself">
+                 <div class="container">
+                    <div class="row">
+                       <div class="preamble col-lg-12 col-md-12 " id="aboutme" style="text-align:center">
+                          <h3>ABOUT ME</h3>
+                       </div>
+                       <div class="col-lg-4 col-md-4">
+                        <img src="../static/img/profile.jpg" style="width: 100%;min-height: 400px;opacity: 0.3;"/>
+                       </div>
+                       <div class="col-lg-8 col-md-8 " id="about">
+                     <span class="firstcharacter"> Hey, </span>I am a Full Stack Developer with over 4 years of experience in creating and Implementing Web Technlogies mainly in  <span class="wordhighlight">React/Node js and Python/Django/Flask  </span><br>
+             I have started my career in 2014 in a Startup company in Kochi,<span class="wordhighlight"> Quadloops Technologies</span>.Over the years, I have adopted, gained experience and moved on from many languages, frameworks and architectures. <br><br>
+            <b> I am currently </b><br><br>
+             <ul class="work">
+              <li>Developing a  <span class="wordhighlight">MERN Stack</span> web application named <span class="wordhighlight">Tiffiny </span></li>
+
+            </ul>
+          <br>
+
+            <b> Recent Experience </b><br><br>
+             <ul class="work">
+              <li>Worked in <span class="wordhighlight">Landed Experts</span>,Vancouver as <span class="wordhighlight">Full Stack Developer</span> from <span class="wordhighlight">Oct 2017 to Sep 2018 </span></li>
+              <li>Voluntering in<span class="wordhighlight"> BC Council for Families </span>as <span class="wordhighlight">Web site Tester</span>from <span class="wordhighlight">July 2017 to Sep 2018 </span></li>
+            </ul>
+          <br>
+             <b> Working on improving my skills</b> <br><br>
+        The consistent theme of my career is to continue building new skills and experiences while improving existing ones. Focus are on things mentioned  below:<br>
+        <ul class="learning">
+          <li>Taking online courses through<span class="wordhighlight">Lynda,Udemy,FreeBootcamp</span> </li>
+          <li>Updating technologies by discussing with people in same field through<span class="wordhighlight"> Meetup</span></li>
+            <li>By creating small application for <span class="wordhighlight"> Self learning </span> and improving</li>
+          </ul>
+
+                       </div>
+                       </div>
+                       </div>
+
+                    </section>
+
+            <section id="resume" class="resume-section section-padding" style="background-color: #ca94a3;">
+                <div class="container">
+
+
+
+                    <div class="row">
+                        <div class="col-md-12 wow fadeInUp">
+                            <h3 style="margin-bottom: 70px;font-size: 36px;text-align:center" >RESUME</h3>
+                            <div class="resume-title">
+                                <h3  style="text-align:center">Experience</h3>
+                            </div>
+                            <div class="resume">
+                                <ul class="timeline">
+
+
+                                  <li>
+                                        <div class="posted-date">
+                                          <span class="month" style="background-color: #ca94a3;color: white;">2018-Present</span>
+                                        </div><!-- /posted-date -->
+
+                                        <div class="timeline-panel wow fadeInUp">
+                                            <div class="timeline-content">
+                                                <div class="timeline-heading">
+                                                    <h3>Full Stack Developer </h3>
+                                                    <span>Freelance,Vancouver</span>
+                                                </div><!-- /timeline-heading -->
+
+                                                <div class="timeline-body">
+                                                    <ul style="text-align: left;">
+                                                    <li>Successfully developed End-to-End web application with React/Redux and Node js</li>
+                                                     <li> Designed and Developed REST APIs </li>
+                                                     <li> Experience in using cloud technologies like AWS </li>
+                                                     <li> Conducted end to end testing to ensure performance quality and responsiveness of application</li>
+
+
+                                               </ul>
+                                                </div><!-- /timeline-body -->
+                                            </div> <!-- /timeline-content -->
+                                        </div><!-- /timeline-panel -->
+                                    </li>
+
+                                    <li>
+                                        <div class="posted-date">
+                                          <span class="month" style="background-color: #ca94a3;color: white;">Oct 2017-Sep 2018</span>
+                                        </div><!-- /posted-date -->
+
+                                        <div class="timeline-panel wow fadeInUp">
+                                            <div class="timeline-content">
+                                                <div class="timeline-heading">
+                                                    <h3>Full Stack Developer</h3>
+                                                    <span>Landed Experts, Vancouver,BC</span>
+                                                </div><!-- /timeline-heading -->
+
+                                                <div class="timeline-body">
+                                                <ul style="text-align: left;">
+                                                   <li> Developed highly interactive UI for Web based Service application using React JS/Node JS. </li>
+                                                     <li>Integrating both frontend and backend together to develop a quality application.</li>
+                                                    <li> Increased the quality and Standards of code by code reviews with peers and managers.</li>
+                                                     <li>Handled incoming bug reports in a timely manner with 99% resolved within sprint</li>
+
+                                               </ul>
+                                                </div><!-- /timeline-body -->
+                                            </div> <!-- /timeline-content -->
+                                        </div><!-- /timeline-panel -->
+                                    </li>
+
+
+                                     <li class="timeline-inverted">
+                                        <div class="posted-date">
+                                          <span class="month" style="background-color:#ca94a3;color: white;">July 2017-Sep 2017</span>
+                                        </div><!-- /posted-date -->
+
+                                        <div class="timeline-panel wow fadeInUp">
+                                            <div class="timeline-content">
+                                                <div class="timeline-heading">
+                                                    <h3>Website Tester</h3>
+                                                    <span>BC Council for Families, Vancouver, BC</span>
+                                                </div><!-- /timeline-heading -->
+
+                                                <div class="timeline-body">
+
+                                                     <ul style="text-align: left;">
+                                                  <li>Identify and execute test cases that result in improving customer experience.</li>
+                                                  <li>Document and report all errors.</li>
+                                                  <li>Ensure the software quality for customer facing websites.</li>
+                                               </ul>
+                                                </div><!-- /timeline-body -->
+                                            </div> <!-- /timeline-content -->
+                                        </div> <!-- /timeline-panel -->
+                                    </li>
+
+
+                                       <li class="timeline-inverted">
+                                        <div class="posted-date">
+                                          <span class="month" style="background-color: #ca94a3;color: white;">2014-2016</span>
+                                        </div><!-- /posted-date -->
+
+                                        <div class="timeline-panel wow fadeInUp">
+                                            <div class="timeline-content">
+                                                <div class="timeline-heading">
+                                                   <h3>Web Developer</h3>
+                                                    <span>Quadloops Technologies</span>
+                                                </div><!-- /timeline-heading -->
+
+                                                <div class="timeline-body">
+                                                   <ul style="text-align: left;">
+                                                    <li>Discussed options with clients to gather software requirements</li>
+                                                    <li>Developed User Interface using jQuery, JavaScript, AngularJS,React, HTML,Bootstrap and CSS</li>
+                                                     <li>Back end development using Python, Flask, Django to enhance custom solutions</li>
+                                                    <li>Maintained codebase using version control applications like GIT and GitHub</li>
+                                                      <li>Manual testing for identifying bugs</li>
+                                                    <li>Done Search functionality using Solr search.</li>
+                                                    <li>Uploaded data using celery</li>
+                                               </ul>
+                                                </div><!-- /timeline-body -->
+                                            </div> <!-- /timeline-content -->
+                                        </div> <!-- /timeline-panel -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- /row -->
+
+                       <div class="row">
+                        <div class="   col-md-12" style="text-align:center">
+
+                            <div class="resume-title">
+                                <h3>Education</h3>
+                            </div>
+                            <div class="resume">
+                                <ul class="timeline">
+                                    <li>
+                                        <div class="posted-date">
+                                            <span class="month" style="background-color: #ca94a3;color: white;">2010-2014</span>
+                                        </div><!-- /posted-date -->
+
+                                        <div class="timeline-panel wow fadeInUp">
+                                            <div class="timeline-content">
+                                                <div class="timeline-heading">
+                                                    <h3>Bachelor Of Technology</h3>
+                                                 <!--    <span>Informaton Technology,L.B.S College of Engineering,Kerala,INDIA</span> -->
+                                                </div><!-- /timeline-heading -->
+
+                                                <div class="timeline-body">
+                                                    <p style="text-align: left; color:black">I have completed Engineering degree from Lal Bahadur College of Engineering(Kannur University) ,Kerala,INDIA in 2014 </p>
+
+                                                </div><!-- /timeline-body -->
+                                            </div> <!-- /timeline-content -->
+                                        </div><!-- /timeline-panel -->
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- /row -->
+                     <div class="row">
+                             <!-- contact 2 -->
+                             <div class="col-lg-12 " style="padding-top:50px">
+
+
+                                <span class="center-text">
+                                   <h3 style=" padding: 0 0 20px 0;font-size: 20px">
+                                     <button type="button" class="btn btn-info" style=" padding:10px; background-color: #17a2b8;border-color: #17a2b8;cursor: pointer;font-size:20px"> 
+                                       <a href="../static/img/resume.pdf"  download="Sree_Resume" style="color:white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="18" style="margin-right:5px"><path fill-rule="evenodd" d="M7.47 10.78a.75.75 0 001.06 0l3.75-3.75a.75.75 0 00-1.06-1.06L8.75 8.44V1.75a.75.75 0 00-1.5 0v6.69L4.78 5.97a.75.75 0 00-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"></path></svg>DOWNLOAD RESUME</a></button>
+
+
+                                    </h3>
+                                </span>
+                             </div>
+                    </div>
+                </div><!-- /.container -->
+            </section><!-- End Resume Section -->
+
+        <br/><br/>
+        <!--- Projects -->
+          <section id="project" >
+              <div class="container" style="text-align:center">
+                <h3 class="section-title wow fadeInUp" style="margin-bottom: 20px;font-size: 36px">PROJECTS</h3>
+          <h5 class="section-title wow fadeInUp" style="margin-bottom: 70px;font-size: 16px">Some of my Projects are</h5>
+        </div>
+        <div class="row" style="margin:auto">
+
+
+
+
+              <div class="col-md-2">
+            </div>
+
+        <div class="col-md-4 ">
+        <div class="flip-card ">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <!--<img src="../static/img/tiffiny.png" alt="Avatar" style="width:300px;height:300px;">-->
+
+                                      <img src="../static/img/tiffiny.png" alt="Avatar" style="width:200px;height:150px;">
+                                      <div class="card-block" style="font-size:15px">
+                                        <h4 class="card-title" style="color:#358ed6">TIFFINY</h4>
+                                        <p class="card-text" style="text-align:left">A web based solution for tiffin service providers to showcase their
+        items and manage delivery.Also potential customers can browse
+        through items and order the best</p>
+        <h6 class="card-title" style="color:#358ed6">TOOLS USED</h6>
+         <b class="card-text" style="text-align:left">HTML, CSS, Material UI, React, React Hooks, React Thunk, ES6, Redux, Google API, Sendgrid, Node JS, Express, REST API, Axios, MongoDB, AWS</b>
+
+                                      </div>
+
+            </div>
+            <div class="flip-card-back" style="font-size:15px">
+              <h3>TIFFINY</h3> 
+        <ul>
+                      <li>Developed interactive UI using React and material UI framework</li>
+              <li> Integrate Google maps API to make app customize base on location</li>
+              <li>Used Sendgrid Mail API for account verification, posting and processing mails</li>
+
+              <li>Improved performance by using Redux as a centralized state management system.</li>
+              <li>Used AWS S3 for image handling and Designed API to store ,retrieveand delete files from buckets.</li>
+              <li>Performed real time communication using Socket.io</li>
+              <li> Deployed the frontend and backend app in heroku</li>
+          </ul>
+               <div class="card-block">
+
+                                        <!--<a href="https://tiffinyclient.herokuapp.com/" class="btn btn-info" style="font-size:20px">Visit</a>-->
+                          <a href="https://tiffinyclient.herokuapp.com/" class="btn btn-primary btn-floating">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path></svg>
+        </a>
+                                      </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <div class="col-md-4">
+        <div class="flip-card ">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <!--<img src="../static/img/tiffiny.png" alt="Avatar" style="width:300px;height:300px;">-->
+
+                                      <img src="../static/img/eventchain.png" alt="Avatar" style="width:200px;height:160px;">
+                                      <div class="card-block" style="font-size:15px">
+                                        <h4 class="card-title" style="color:#358ed6">EVENTCHAIN</h4>
+                                        <p class="card-text" style="text-align:left">A tool for event management and ticketing.The service allows users to
+        create, browse, and promote local events.</p>
+        <h6 class="card-title" style="color:#358ed6">TOOLS USED</h6>
+         <b class="card-text" style="text-align:left">HTML, CSS, Ant Design, React, ES6, Redux, GraphQL, GraphiQL, Nodejs, Express, Postgress</b>
+
+                                      </div>
+
+            </div>
+            <div class="flip-card-back" style="font-size:15px">
+              <h3>EVENTCHAIN</h3> 
+        <ul>
+                      <li>Created cross-browser compatible and responsive layout usingReact and Ant Design</li>
+              <li> Performed data mutations and query in GraphQL which allow updating and retrieving information</li>
+              <li>Experience in using GraphiQL tool for exploring GraphQL</li>
+
+
+          </ul>
+               <div class="card-block">
+
+
+                            <a href="https://eventchain.io/home" class="btn btn-primary btn-floating">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path></svg>
+        </a>
+                                      </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+            </div>  
+             <div class="col-md-2">
+        </div> </div>   <br/><br/> 
+
+
+
+        <div class="row" style="margin:auto">
+          <div class="col-md-2">
+        </div>
+
+        <div class="col-md-4 ">
+        <div class="flip-card ">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <!--<img src="../static/img/tiffiny.png" alt="Avatar" style="width:300px;height:300px;">-->
+
+                                      <img src="https://res-1.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1439963429/duf56utorkvzsenfv5ve.png" alt="Avatar" style="width:200px;height:160px;">
+                                      <div class="card-block" style="font-size:15px">
+                                        <h4 class="card-title" style="color:#358ed6">HEYBADGES</h4>
+                                        <p class="card-text" style="text-align:left">A gamification app that brings awesome to business by
+        boosting productivity and engagement</p>
+        <h6 class="card-title" style="color:#358ed6">TOOLS USED</h6>
+         <b class="card-text" style="text-align:left">HTML, CSS, Less, Sass, Javascript, Python, MongoDB</b>
+
+                                      </div>
+
+            </div>
+            <div class="flip-card-back" style="font-size:15px">
+              <h3>HEYBADGES</h3> 
+        <ul>
+                      <li>Front-end for certain modules using HTML,CSS</li>
+              <li> Used CSS preprocessors like Less and Sass.</li>
+              <li>Tested manually and reporting bugs.</li>
+
+          </ul>
+
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <div class="col-md-4">
+        <div class="flip-card " >
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <!--<img src="../static/img/tiffiny.png" alt="Avatar" style="width:300px;height:300px;">-->
+
+                                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUOAsu-yzlOJIsST2rykEZI7EDT9B1tfp1Yg&usqp=CAU" alt="Avatar" style="width:200px;height:160px;">
+                                      <div class="card-block" style="font-size:15px">
+                                        <h4 class="card-title" style="color:#358ed6">LADYO</h4>
+                                        <p class="card-text" style="text-align:left">AAn e-commerce site dealing with women clothing and accessories. It i nclude features l ike
+        add to cart,add to wish-list ,coupon etc.</p>
+        <h6 class="card-title" style="color:#358ed6">TOOLS USED</h6>
+         <b class="card-text" style="text-align:left">HTML, CSS, JQuerry, Javascript, Python, Flask, MongoDB</b>
+
+                                      </div>
+
+            </div>
+            <div class="flip-card-back" style="font-size:15px">
+              <h3>LADYO</h3> 
+        <ul>
+                    <li> Developed Front-end from scratch for admin module, vendor module and customers using HTML,CSS ,JQuery and JavaScript
+         <li>Search functionality using solr search.</li>
+         <li>Facebook, Google Plus l ogin with python flask-auth.</li>
+         <li>MongoDB management.</li>
+         <li>Developed Back-end using Python Flask.</li>
+         <li>Uploaded data using celery</li>
+
+
+          </ul>
+
+            </div>
+          </div>
+         <div class="col-md-2">
+        </div>
+
+
+        </div>
+
+
+              </div><!-- /.container -->
+            </section><!-- End Project Section -->
+
+
+
+            <!-- Skills Section -->
+            <section id="skills" class="skills-section section-padding">
+              <div class="container" style="text-align:center">
+                <h3 class="section-title wow fadeInUp" style="margin-bottom: 70px;font-size: 36px">SKILLS</h3>
+          <div class="row">
+
+                  <div class="col-md-4">
+                      <h4>Front End Technology</h4><br>
+
+                    <div class="skill-item wow fadeInUp" style="width: 100%;">
+                      <ul>
+                         <li><em> HTML5</em>
+                          <ul>
+                              <li><em>Bootstrap</em></li>
+                               <li><em>Material UI</em></li>
+                                <li><em>Ant Design</em></li>
+
+                            </ul></li> 
+                        <li><em><b>*</b><b>*</b>CSS3</em>
+                           <ul>
+                              <li><em>Less/Sass</em></li>
+
+                            </ul>
+                        </li> 
+                        <li><em><b>*</b><b>*</b>Javascript</em>
+                            <ul>
+                                <li><em>React JS</em></li>
+                              <li><em>jQuerry</em></li>
+                              <li><em>AngularJS</em></li>
+
+                            </ul>
+                          </li>
+
+                      </ul>
+                    </div>
+
+
+                  </div>
+
+                  <div class="col-md-4">
+                      <h4>Back End Technology</h4><br>
+
+                    <div class="skill-item wow fadeInUp" style="width: 100%;">
+                      <ul>
+                          <li><em>Nodejs </em></li> 
+                        <li><em><b>*</b><b>*</b>Python</em>
+                            <ul>
+                              <li><em>Flask</em></li>
+                              <li><em>Django</em></li>
+                              </ul>
+                          </li>
+
+                        <li><em><b>*</b><b>*</b>PHP</em></li> 
+                        <li><em><b>*</b><b>*</b>Database</em>
+                        <ul> <li><em>MongoDB </em></li> 
+                          <li><em>Mysql </em></li> </ul>
+                          </li>
+                      </ul>
+                    </div>
+
+
+                  </div>
+
+                   <div class="col-md-4">
+                      <h4>Other</h4><br>
+
+                    <div class="skill-item wow fadeInUp" style="width: 100%;">
+                      <ul>
+                        <li><em><b>*</b><b>*</b>Version Control</em>
+                          <ul>
+                            <li><em>GIT</em></li>
+                            <li><em> GitHub</em></li></ul>
+                          </li>
+                          <li><em> Agile Methodology</em>
+                            <ul>
+                         <li><em>JIRA </em></li> 
+                       </ul>
+                     </li>
+                        <li><em><b>*</b><b>*</b>Confluence</em></li> 
+                        <li><em><b>*</b><b>*</b>OS</em>
+                          <ul>
+                         <li><em>Windows </em></li> 
+                          <li><em>Linux </em></li> 
+                      </ul>
+                    </li>
+                  </ul>
+                    </div>
+
+
+                  </div>
+                </div> 
+
+
+
+              </div><!-- /.container -->
+            </section><!-- End Skills Section -->
+
+
+
+              <!-- End Team -->
+
+                    <section id="contact">
+                       <div class="container">
+                          <div class="row">
+                             <!-- contact 2 -->
+                             <div class="col-lg-12 " style="padding-top:50px">
+
+                                <span class="center-text">
+                                   <h3 style=" padding: 0 0 20px 0;font-size: 36px">CONTACT ME</h3>
+                                </span>
+
+
+
+
+         <div class="sub-title">
+                                <div class="margin">
+
+
+                                   <ul class="social custom-list list-inline" style="padding-top:25px;text-align: center;">
+
+                                      <li style=" font-size: 55px;"><a href="mailto:me.kodoth@hotmail.com?Subject=subject here&Body=bodytext"><i class="fa fa-envelope"></i></a></li>
+                                    <li style=" font-size: 55px;"><a href="https://www.linkedin.com/in/sreelakshmi-kodoth-40502b109/"><i class="fa fa-linkedin"></i></a></li>
+                                   </ul>
+                                </div>
+                             </div>
+
+
+
+
+
+                             </div>
+                    </div>
+                 </div>
+              </section>
+              <!-- End Team -->
+
+
+
+
+
+
+
+
+
+
+
+              <!-- End Clients -->
+              <footer id="footer">
+                 <div class="footer-top">
+                    <div class="container">
+                       <div class="row">
+
+
+
+
+                       </div>
+                    </div>
+                 </div>
+                 <div class="footer-copyrights">
+                    <div class="container">
+                       <div class="row">
+                          <div class="col-lg-12">
+                             <div class="pull-left">
+                                <p>me.kodoth@hotmail.com</p>
+                             </div>
+                             <div class="pull-right">
+
+                             </div>
+                          </div>
+                       </div>
+
+                    </footer>
+                    <!-- Scripts -->
+                   <script src="../static/js/map.js"></script> 
+                    <script src="../static/js/jquery-2.1.4.min.js"></script> 
+                     <!--  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>  -->
+
+                    <script src="../static/js/jquery.viewport.js"></script>
+                    <script src="../static/js/scripts.js"></script>
+                    <script src="../static/js/jquery-ui.min.js"></script>
+              <script src="../static/js/owl.carousel.min.js"></script> 
+                    <script src="../static/js/gmap3.min.js"></script>
+                    <script src="../static/js/isotope.pkgd.min.js"></script>
+                    <script src="../static/js/jquery.nav.js"></script>
+                 <script src="../static/js/typeit.min.js"></script> 
+                    <script src="../static/js/wow.min.js"></script>
+                  <!--  <script src="js/jquery.countTo.js"></script>
+                   <script src="js/jquery.inview.min.js"></script> 
+                   <script src="js/jquery.easypiechart.js"></script> -->
+                   <script src="../static/js/jquery.shuffle.min.js"></script>
+                   <script src="../static/js/jquery.magnific-popup.min.js"></script>
+                   <script src="../static/js/froogaloop2.min.js"></script>
+                   <script src="../static/js/jquery.fitvids.js"></script>
+                   <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script> -->
+                   <script src="../static/js/scripts1.js"></script>
+
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/typeit@4.4.1/dist/typeit.min.js"></script>
+         -->
+
+        <script type="text/javascript">
+        $('.type-it').typeIt({
+            strings: ['I am a Full Stack Developer' , 'with over 4 years of Experience ','in both Front-end and Back-end']
+          });
+        </script>
+
+
+              </body>
+        </html>
+
